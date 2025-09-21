@@ -1,1 +1,1 @@
-gcc main.c -o main -LC:\msys64\ucrt64\lib -IC:\msys64\ucrt64\include -lsdl3
+gcc SnakeGame.c -o Snake -LC:\msys64\ucrt64\lib -IC:\msys64\ucrt64\include -lsdl3

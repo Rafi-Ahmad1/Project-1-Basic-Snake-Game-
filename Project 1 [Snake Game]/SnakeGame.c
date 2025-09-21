@@ -29,9 +29,6 @@ SDL_Window *gWindow = NULL;
 SDL_Surface *gScreenSurface = NULL;
 Entity Snake[SNAKE_MAX_LENGTH + 1]; //0 is for head. Rest for Body
 Entity Apple;
-typedef struct point{
-    int x, y;
-}Point;
 jmp_buf jmp;
 
 int main(int argc, char *argv[]) {

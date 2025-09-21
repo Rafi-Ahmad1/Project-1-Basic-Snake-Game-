@@ -135,33 +135,21 @@ void move(const SDL_Scancode direction, int snake_size) {
     for(int i = snake_size; i >= 0; i--) {
         //First update the head's location
         if(direction == SDL_SCANCODE_W) {
-            //Blocking going back
-            if(direction == SDL_SCANCODE_S)
-                continue;
             //Go Up
             if(i == 0)
                 Snake[i].Body.y -= PIXEL_SIZE;
         }
         else if(direction == SDL_SCANCODE_S) {
-            //Blocking going back
-            if(direction == SDL_SCANCODE_A)
-                continue;
             //Go Down
             if(i == 0)
                 Snake[i].Body.y += PIXEL_SIZE;
         }
         else if(direction == SDL_SCANCODE_A) {
-            //Blocking going back
-            if(direction == SDL_SCANCODE_D)
-                continue;
             //Go Left
             if(i == 0)
                 Snake[i].Body.x -= PIXEL_SIZE;
         }
         else if(direction == SDL_SCANCODE_D) {
-            //Blocking going back
-            if(direction == SDL_SCANCODE_A)
-                continue;
             //Go Right
             if(i == 0)
                 Snake[i].Body.x += PIXEL_SIZE;
